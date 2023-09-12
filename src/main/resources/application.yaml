@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.56.10:3306/batch?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2b8&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+  sql:
+    init:
+      schema-locations: classpath:org/springframework/batch/core/schema-mysql.sql
+      #mode: always
+      mode: never
+  batch:
+    job:
+      enable: false
+mybatis:
+  configuration:
+    default-executor-type: batch
+job:
+  data:
+    path: D:/spring-batch-example/
