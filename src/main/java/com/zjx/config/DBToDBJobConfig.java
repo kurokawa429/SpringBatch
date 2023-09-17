@@ -68,7 +68,7 @@ public class DBToDBJobConfig {
         return itemWriter;
     }
 
-    //文件分区处理器-处理分区
+    //文件分区处理器-处理分区。
     @Bean
     public PartitionHandler dbToDBPartitionHandler() {
         TaskExecutorPartitionHandler handler = new TaskExecutorPartitionHandler();
