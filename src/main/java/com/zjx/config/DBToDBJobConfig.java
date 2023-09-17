@@ -83,7 +83,7 @@ public class DBToDBJobConfig {
         return handler;
     }
 
-    //每个从分区操作步骤
+    //每个从分区操作步骤。
     @Bean
     public Step workStep() {
         return stepBuilderFactory.get("workStep")
