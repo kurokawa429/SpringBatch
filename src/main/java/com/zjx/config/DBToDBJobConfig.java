@@ -59,7 +59,7 @@ public class DBToDBJobConfig {
 
         return itemReader;
     }
-    //数据库写- 写入到employee 表中
+    //数据库写- 写入到employee 表中。
     @Bean
     public MyBatisBatchItemWriter<Employee> dbToDBItemWriter(){
         MyBatisBatchItemWriter<Employee> itemWriter = new MyBatisBatchItemWriter<>();
